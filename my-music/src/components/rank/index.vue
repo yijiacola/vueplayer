@@ -70,4 +70,5 @@ import {list as data} from '../../json.js';
 #rank .mu-item-title{
     font-size:1.5rem;
 }
+
 </style>

@@ -1,4 +1,4 @@
-http://m.kugou.com/
+http://m.kugou.com/plist/index&json=true
 
 [1]:Ê×Ò³ÁÐ±í
 ?json=true

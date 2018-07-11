@@ -1,7 +1,6 @@
 <template>
     <div id="indelist">
         <mu-paper :z-depth="1" class="demo-loadmore-wrap">
-            
             <mu-list textline="three-line">
                 <Carousel />
                 <mu-list-item 
