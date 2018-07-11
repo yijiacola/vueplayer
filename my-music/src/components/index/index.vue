@@ -6,6 +6,7 @@
                 <mu-list-item 
                     button 
                     v-for="val in list" 
+                    @click="$store.dispatch('play',val.hash)"
                 >
                     <mu-list-item-content>
                         <mu-list-item-title>{{val.filename}}</mu-list-item-title>
@@ -14,6 +15,7 @@
                         </mu-list-item-action>
                     </mu-list-item-content>
                 </mu-list-item>
+                <div class="d"></div>
             </mu-list>
         </mu-paper>
     </div>
@@ -23,6 +25,9 @@
 import Carousel from './carousel';
 export default {
     name:'Index',
+     created(){
+        this.$store.commit('pboff');
+    },
     mounted() {
         this.$store.dispatch('addJson');
     },
@@ -30,8 +35,7 @@ export default {
         return{
             list:this.$store.state.indexData.list
         }
-    },
-        
+    },  
     components:{
         Carousel
     }
@@ -39,6 +43,9 @@ export default {
 </script>
 
 <style>
+.d{
+    padding-top:4.5rem; 
+}
 #indelist .demo-loadmore-wrap {
   width: 100%;
   height:40.3rem;
