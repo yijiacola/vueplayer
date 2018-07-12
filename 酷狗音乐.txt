@@ -1,5 +1,4 @@
-http://m.kugou.com/plist/index&json=true
-
+http://m.kugou.com/singer/list/?json=true?classid=88
 [1]:Ê×Ò³ÁÐ±í
 ?json=true
 
