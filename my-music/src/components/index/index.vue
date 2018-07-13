@@ -7,7 +7,6 @@
                     button 
                     v-for="val in list" 
                     @click="$store.dispatch('play',val.hash)"
-                >
                     <mu-list-item-content>
                         <mu-list-item-title>{{val.filename}}</mu-list-item-title>
                         <mu-list-item-action>
@@ -25,7 +24,7 @@
 import Carousel from './carousel';
 export default {
     name:'Index',
-     created(){
+    created(){
         this.$store.commit('pboff');
     },
     mounted() {
