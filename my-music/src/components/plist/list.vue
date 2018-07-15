@@ -1,7 +1,6 @@
 <template>
     <div id="pl">
         <mu-paper :z-depth="1" class="demo-loadmore-wrap">
-            
             <mu-list textline="three-line">
                 <mu-card-media :title="title" sub-title="Image Sub Title">
                     <router-link to="/rank">
